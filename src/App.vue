@@ -2,11 +2,13 @@
   <h1>Wazaaaaa</h1>
   <!-- <PostContainer />
   <TeacherForm/> -->
-  <ComputedExample />
+  <!-- <ComputedExample /> -->
+  <FacturaContainer />
 </template>
 
 <script lang="ts" setup>
-import ComputedExample from './components/computed/ComputedExample.vue';
+import FacturaContainer from './components/facturas/FacturaContainer.vue';
+// import ComputedExample from './components/computed/ComputedExample.vue';
 // import PostContainer from './components/PostContainer.vue';
 // import TeacherForm from './components/TeacherForm.vue';
 </script>
