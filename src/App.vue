@@ -1,12 +1,14 @@
 <template>
   <h1>Wazaaaaa</h1>
-  <PostContainer />
-  <TeacherForm/>
+  <!-- <PostContainer />
+  <TeacherForm/> -->
+  <ComputedExample />
 </template>
 
 <script lang="ts" setup>
-import PostContainer from './components/PostContainer.vue';
-import TeacherForm from './components/TeacherForm.vue';
+import ComputedExample from './components/computed/ComputedExample.vue';
+// import PostContainer from './components/PostContainer.vue';
+// import TeacherForm from './components/TeacherForm.vue';
 </script>
 
 <style>
