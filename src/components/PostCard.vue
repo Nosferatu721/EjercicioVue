@@ -7,35 +7,21 @@
   </div>
 </template>
 
-<script lang="ts">
-// import PostButton from './PostButton.vue';
-import { defineComponent } from 'vue';
-export default defineComponent({
-  name: 'PostCard',
-  props: {
-    title: {
-      type: String,
-      required: true,
-    },
-    content: {
-      type: String,
-      required: false,
-      default: 'No tiene contenido ***',
-    },
-    size: {
-      type: Number,
-      required: false,
-      default: 0,
-    },
-  },
-  emits: ['sayHi'],
-  setup(props, { emit }) {
-    const handleClick = () => {
-      emit('sayHi', 'Hiiiiiiiiiiiiii');
-    };
-    return { props, handleClick};
-  },
+<script lang="ts" setup>
+import { defineProps, defineEmits } from 'vue';
+import PostButton from './PostButton.vue';
+
+const props = defineProps({
+  title: String,
+  content: String,
+  size: Number,
 });
+
+const emit = defineEmits(['sayHi']);
+
+const handleClick = () => {
+  emit('sayHi', 'Hiiiiiiiiiiiiii');
+};
 </script>
 
 <style scoped>
