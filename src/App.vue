@@ -3,11 +3,13 @@
   <!-- <PostContainer />
   <TeacherForm/> -->
   <!-- <ComputedExample /> -->
-  <FacturaContainer />
+  <!-- <FacturaContainer /> -->
+  <PostList />
 </template>
 
 <script lang="ts" setup>
-import FacturaContainer from './components/facturas/FacturaContainer.vue';
+import PostList from './components/posts/PostList.vue';
+// import FacturaContainer from './components/facturas/FacturaContainer.vue';
 // import ComputedExample from './components/computed/ComputedExample.vue';
 // import PostContainer from './components/PostContainer.vue';
 // import TeacherForm from './components/TeacherForm.vue';
